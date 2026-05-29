@@ -272,7 +272,7 @@ button {
   background-color: var(--color-primary-300);
   border-left: 8px solid var(--color-primary-100);
   border-radius: 8px;
-  box-shadow: 2px 4px 16px 2px rgb(160, 160, 160, 0.4);
+  box-shadow: 2px 4px 16px 2px hsl(157, 21%, 23%, 0.5);
   display: flex;
   flex-direction: column;
   padding: 16px 24px 20px 16px;
@@ -313,7 +313,7 @@ button {
     background-color: var(--color-primary-300);
     padding: 20px 24px;
     border-radius: 8px;
-    box-shadow: 2px 4px 12px 2px rgb(160, 160, 160);
+    box-shadow: 2px 4px 16px 2px hsl(157, 21%, 23%, 0.5);
     display: grid;
     grid-template-rows: 1fr 1px 1fr 1px 1fr;
     gap: 12px;
@@ -345,7 +345,7 @@ hr {
     background-color: var(--color-primary-300);
     padding: 20px 20px;
     border-radius: 8px;
-    box-shadow: 2px 4px 12px 2px rgb(160, 160, 160);
+    box-shadow: 2px 4px 16px 2px hsl(157, 21%, 23%, 0.5);
     display: grid;
     grid-template-rows: 1fr 1px 1fr 1px 1fr 1px 1fr;
     gap: 12px;
