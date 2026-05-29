@@ -56,6 +56,7 @@
   --color-primary-400: #092635;
   --color-text-100: hsl(0, 0%, 95%);
   --color-text-600: hsl(0, 10%, 86%);
+  --color-accent: #bed754;
 
   /* font declaration */
   font-family: "Plus Jakarta Sans", Helvetica, sans-serif;
@@ -162,7 +163,7 @@ ul {
 .header {
   flex: 1 0 auto;
   display: grid;
-  grid-template: 48px 1fr / 1fr 320px;
+  grid-template: 48px 1fr / 1fr 360px;
   padding: 16px 24px 24px 40px;
   gap: 16px 8px;
   border-bottom: 1px solid #ccc;
@@ -175,9 +176,11 @@ ul {
   gap: 12px;
   align-items: center;
   & input {
-    border: 1px solid var(--color-primary-200);
+    background-color: var(--color-primary-200);
+    border: 2px solid var(--color-primary-100);
     border-radius: 40px;
-    width: 640px;
+    padding: 12px 16px;
+    width: 560px;
     height: 32px;
   }
 }
@@ -185,14 +188,19 @@ ul {
 .header .user-info {
   grid-column: 2;
   display: grid;
-  grid-template-columns: 24px 1fr;
+  grid-template-columns: 24px 180px;
   align-items: center;
+  justify-content: end;
   gap: 28px;
+}
+
+.notification {
+  height: 24px;
 }
 
 .user-menu {
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 40px 120px;
   align-items: center;
   gap: 12px;
   & .user-pict {
@@ -230,12 +238,12 @@ ul {
 }
 
 button {
-  padding: 8px 24px;
+  padding: 12px 32px;
   background-color: var(--color-primary-400);
   border: 0;
-  border-radius: 64px;
+  border-radius: 80px;
   font-family: "Plus Jakarta Sans", Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: white;
 }
 
@@ -270,7 +278,7 @@ button {
 
 .project-card {
   background-color: var(--color-primary-300);
-  border-left: 8px solid var(--color-primary-100);
+  border-left: 8px solid var(--color-accent);
   border-radius: 8px;
   box-shadow: 2px 4px 16px 2px hsl(157, 21%, 23%, 0.5);
   display: flex;
@@ -333,7 +341,7 @@ button {
 
 hr {
   border: 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid var(--color-primary-200);
 }
 
 .trending {
