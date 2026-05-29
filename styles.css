@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid pink; */
+  outline: 1px solid pink;
   box-sizing: border-box;
   margin: 0;
 }
@@ -13,7 +13,7 @@ ul {
 .dashboard {
   display: grid;
   grid-template-columns: 240px 1fr;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .sidebar {
@@ -26,7 +26,7 @@ ul {
   gap: 40px;
 }
 
-.logo {
+.sidebar .logo {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -34,7 +34,7 @@ ul {
   color: white;
 }
 
-.menus {
+.sidebar .menus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -55,7 +55,7 @@ ul {
 .dashboard .container {
   display: flex;
   flex-direction: column;
-  height: auto;
+  /* height: auto; */
 }
 
 .header {
@@ -66,7 +66,7 @@ ul {
   gap: 24px 16px;
 }
 
-.search {
+.header .search {
   grid-column: 1 / 2;
   display: flex;
   gap: 12px;
@@ -79,15 +79,15 @@ ul {
   }
 }
 
-.user-info {
+.header .user-info {
   grid-column: 2 / 3;
 }
 
-.title-bar {
+.header .title-bar {
   grid-column: 1 / 2;
 }
 
-.action-buttons {
+.header .action-buttons {
   grid-column: 2 / 3;
 }
 
@@ -96,8 +96,7 @@ ul {
   flex: 3 1 auto;
   background-color: whitesmoke;
   padding: 24px 32px 40px 24px;
-  display: grid;
-  grid-template: 1fr 1fr / 720px 1fr;
+  display: flex;
   gap: 20px;
 }
 
@@ -146,8 +145,14 @@ ul {
   gap: 8px;
 }
 
+.side-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .announcements {
-  grid-row: 1/2;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -175,8 +180,58 @@ hr {
 }
 
 .trending {
-  grid-row: 2/3;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  & .container {
+    flex: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 12px 2px rgb(160, 160, 160);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.user {
+  flex: 1;
+  display: grid;
+  grid-template: 20px 20px / 40px 1fr;
+  column-gap: 12px;
+}
+
+.small-profile {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  /* border: 2px solid blue; */
+}
+
+.one .small-profile {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxhHu4Xjz7KLeNZyC40Zq40lItgvtcrirrg&s);
+  background-size: cover;
+  background-position: center;
+}
+
+.two .small-profile {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXmlHze1jqSMdDkEt2VCNAyXiErVFYIzINvQ&s);
+  background-size: cover;
+  background-position: center;
+}
+
+.three .small-profile {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMB4DyzlDpYoUrsh5NaTGTBf432aAqPBIzKQ&s);
+  background-size: cover;
+  background-position: center;
+}
+
+.four .small-profile {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGCaIaOptNSWFEIErJIQti0UkTpR_ie5EtUg&s);
+  background-size: cover;
+  background-position: center;
 }
