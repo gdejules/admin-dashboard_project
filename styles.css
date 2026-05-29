@@ -50,18 +50,26 @@
 
 :root {
   /* color declaration */
+  --color-primary-100: #9ec8b9;
+  --color-primary-200: #5c8374;
+  --color-primary-300: #1b4242;
+  --color-primary-400: #092635;
+  --color-text-100: hsl(0, 0%, 95%);
+  --color-text-600: hsl(0, 10%, 86%);
 
   /* font declaration */
   font-family: "Plus Jakarta Sans", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--color-text-600);
 }
 
 /* fonts styling */
 h1 {
   font-size: 2rem;
   font-weight: bold;
+  color: var(--color-text-100);
 }
 
 .your-projects,
@@ -69,6 +77,7 @@ h1 {
 .trending-title {
   font-size: 1.4rem;
   font-weight: 600;
+  color: var(--color-text-100);
 }
 
 .project-card .title,
@@ -76,12 +85,14 @@ h1 {
 .profile-name {
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--color-text-100);
 }
 
 .greeting,
 .user-name {
   font-size: 1rem;
   font-weight: 500;
+  color: var(--color-text-100);
 }
 
 /* layouts */
@@ -106,7 +117,7 @@ ul {
 .sidebar {
   grid-column: 1;
   height: 100vh;
-  background-color: navy;
+  background-color: var(--color-primary-400);
   padding: 24px;
   display: grid;
   grid-template-rows: 40px 1fr;
@@ -155,6 +166,7 @@ ul {
   padding: 16px 24px 24px 40px;
   gap: 16px 8px;
   border-bottom: 1px solid #ccc;
+  background-color: var(--color-primary-300);
 }
 
 .header .search {
@@ -163,7 +175,7 @@ ul {
   gap: 12px;
   align-items: center;
   & input {
-    border: 1px solid lightgray;
+    border: 1px solid var(--color-primary-200);
     border-radius: 40px;
     width: 640px;
     height: 32px;
@@ -187,7 +199,7 @@ ul {
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    border: 1px solid lightseagreen;
+    border: 1px solid var(--color-primary-100);
   }
 }
 
@@ -203,7 +215,7 @@ ul {
   width: 64px;
   height: 64px;
   border-radius: 64px;
-  border: 1px solid lightcoral;
+  border: 1px solid var(--color-primary-100);
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxhHu4Xjz7KLeNZyC40Zq40lItgvtcrirrg&s);
   background-size: cover;
   background-position: center;
@@ -219,7 +231,7 @@ ul {
 
 button {
   padding: 8px 24px;
-  background-color: navy;
+  background-color: var(--color-primary-400);
   border: 0;
   border-radius: 64px;
   font-family: "Plus Jakarta Sans", Helvetica, sans-serif;
@@ -230,7 +242,7 @@ button {
 .main-content {
   overflow: auto;
   flex: 3 1 auto;
-  background-color: whitesmoke;
+  background-color: var(--color-primary-200);
   padding: 24px 32px 24px 24px;
   display: grid;
   grid-template-columns: 1fr 280px;
@@ -257,8 +269,8 @@ button {
 }
 
 .project-card {
-  background-color: white;
-  border-left: 8px solid rebeccapurple;
+  background-color: var(--color-primary-300);
+  border-left: 8px solid var(--color-primary-100);
   border-radius: 8px;
   box-shadow: 2px 4px 16px 2px rgb(160, 160, 160, 0.4);
   display: flex;
@@ -298,7 +310,7 @@ button {
   & .container {
     flex: 0 1 auto;
     height: auto;
-    background-color: white;
+    background-color: var(--color-primary-300);
     padding: 20px 24px;
     border-radius: 8px;
     box-shadow: 2px 4px 12px 2px rgb(160, 160, 160);
@@ -330,7 +342,7 @@ hr {
   gap: 8px;
   & .container {
     flex: 0;
-    background-color: white;
+    background-color: var(--color-primary-300);
     padding: 20px 20px;
     border-radius: 8px;
     box-shadow: 2px 4px 12px 2px rgb(160, 160, 160);
