@@ -1,6 +1,7 @@
 * {
-  outline: 1px solid pink;
+  /* outline: 1px solid pink; */
   box-sizing: border-box;
+  margin: 0;
 }
 
 ul {
@@ -16,6 +17,39 @@ ul {
 
 .sidebar {
   grid-row: 1 / 3;
+  height: 100vh;
+  background-color: navy;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  align-content: start;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 32px;
+  color: white;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+  }
 }
 
 .header {
