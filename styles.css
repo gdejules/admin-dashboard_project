@@ -1,3 +1,90 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src:
+    url("PlusJakartaSans-Bold.woff2") format("woff2"),
+    url("PlusJakartaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src:
+    url("PlusJakartaSans-Light.woff2") format("woff2"),
+    url("PlusJakartaSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src:
+    url("PlusJakartaSans-Medium.woff2") format("woff2"),
+    url("PlusJakartaSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src:
+    url("PlusJakartaSans-Regular.woff2") format("woff2"),
+    url("PlusJakartaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src:
+    url("PlusJakartaSans-SemiBold.woff2") format("woff2"),
+    url("PlusJakartaSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* color declaration */
+
+  /* font declaration */
+  font-family: "Plus Jakarta Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* fonts styling */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.your-projects,
+.announcements-title,
+.trending-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.project-card .title,
+.announcement .title,
+.profile-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.greeting,
+.user-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* layouts */
 * {
   /* outline: 1px solid pink; */
   box-sizing: border-box;
@@ -14,7 +101,6 @@ ul {
   display: grid;
   grid-template-columns: 280px 1fr;
   width: 100vw;
-  /* height: 100vh; */
 }
 
 .sidebar {
@@ -32,7 +118,8 @@ ul {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 32px;
+  font-size: 1.7rem;
+  font-weight: bold;
   color: white;
 }
 
@@ -64,7 +151,7 @@ ul {
 .header {
   flex: 1 0 auto;
   display: grid;
-  grid-template: 48px 1fr / 1fr 280px;
+  grid-template: 48px 1fr / 1fr 320px;
   padding: 16px 24px 24px 40px;
   gap: 16px 8px;
   border-bottom: 1px solid #ccc;
@@ -131,9 +218,12 @@ ul {
 }
 
 button {
-  padding: 8px 16px;
+  padding: 8px 24px;
   background-color: navy;
+  border: 0;
   border-radius: 64px;
+  font-family: "Plus Jakarta Sans", Helvetica, sans-serif;
+  font-size: 1rem;
   color: white;
 }
 
@@ -143,7 +233,7 @@ button {
   background-color: whitesmoke;
   padding: 24px 32px 24px 24px;
   display: grid;
-  grid-template-columns: 1fr 240px;
+  grid-template-columns: 1fr 280px;
   gap: 24px;
 }
 
@@ -183,7 +273,7 @@ button {
 .desc {
   flex: 1 1 auto;
   margin-bottom: 16px;
-  max-height: 120px;
+  max-height: 180px;
 }
 
 .btns {
@@ -251,9 +341,9 @@ hr {
 }
 
 .user {
-  flex: 1;
   display: grid;
-  grid-template: 20px 20px / 40px 1fr;
+  grid-template: 24px 24px / 40px 1fr;
+  align-items: center;
   column-gap: 12px;
 }
 
